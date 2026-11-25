@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ristorante Pizzeria Segreto del Sorriso — Vigevano</title>
+  <meta name="description" content="Ristorante Pizzeria Segreto del Sorriso a Vigevano (Viale dei Mille 86). Pizza sottile e fragrante, cucina di pesce fresco e piatti della tradizione in un ambiente elegante e luminoso." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#14110F',
+              card: '#1D1916',
+              gold: '#D4A359',
+              goldHover: '#E5B66E',
+              cream: '#F8F5F0',
+              bordeaux: '#7C232A'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-bg {
+      background-image: linear-gradient(to bottom, rgba(20, 17, 15, 0.74), rgba(20, 17, 15, 0.88)),
+        url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-stone-800 font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+  <!-- Top Navbar -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-full bg-brand-gold/15 border border-brand-gold/40 flex items-center justify-center text-brand-gold font-serif font-bold text-xl">
+          S
+        </div>
+        <div>
+          <span class="block font-serif text-lg sm:text-xl font-bold tracking-wide text-white leading-none">
+            Segreto del Sorriso
+          </span>
+          <span class="block text-[11px] uppercase tracking-[0.2em] text-brand-gold mt-0.5">
+            Ristorante &bull; Pizzeria &bull; Vigevano
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-300">
+        <a href="#menu" class="hover:text-brand-gold transition">Menu Digitale</a>
+        <a href="#locale" class="hover:text-brand-gold transition">Il Locale</a>
+        <a href="#recensioni" class="hover:text-brand-gold transition">Recensioni</a>
+        <a href="#orari" class="hover:text-brand-gold transition">Orari & Dove Siamo</a>
+      </nav>
+
+      <a href="tel:+39038120915" class="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-brand-dark font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-full transition shadow-lg shadow-brand-gold/10">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+        </svg>
+        <span>Prenota Tavolo</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg pt-32 pb-20 sm:pt-44 sm:pb-28 px-4 sm:px-6 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm text-xs sm:text-sm text-brand-gold font-medium mb-6">
+        <span>&#9733; 4.3 / 5 su oltre 1.200 recensioni a Vigevano</span>
+      </div>
+
+      <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] mb-6">
+        Il gusto autentico della <span class="text-brand-gold italic">pizza sottile</span> e della cucina di mare.
+      </h1>
+
+      <p class="text-base sm:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed mb-9">
+        In Viale dei Mille 86 a Vigevano, un ambiente ampio, luminoso e rinnovato dove gustare pizze fragranti ad alta digeribilità, specialità di pesce fresco e piatti della tradizione.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4">
+        <a href="tel:+39038120915" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brand-gold hover:bg-brand-goldHover text-brand-dark font-bold px-7 py-4 rounded-full text-base transition shadow-xl">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+          </svg>
+          Chiama 0381 20915
+        </a>
+        <a href="#menu" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold px-7 py-4 rounded-full text-base transition">
+          Sfoglia il Menu
+        </a>
+      </div>
+
+      <!-- Quick Info Bar -->
+      <div class="mt-14 pt-8 border-t border-white/15 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-stone-300">
+        <div class="flex items-center justify-center gap-2">
+          <span class="text-brand-gold font-bold">&#9679;</span>
+          <span>Pranzo 12:00–14:30 &bull; Cena 19:00–23:30</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <span class="text-brand-gold font-bold">&#9679;</span>
+          <span>Viale dei Mille, 86 — Vigevano (PV)</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <span class="text-brand-gold font-bold">&#9679;</span>
+          <span>Sala interna rinnovata &amp; Asporto</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Menu Section -->
+  <section id="menu" class="py-20 sm:py-24 px-4 sm:px-6 max-w-5xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-xs font-bold uppercase tracking-[0.22em] text-brand-bordeaux">La Carta Gastronomica</span>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-dark mt-2 mb-3">Il Nostro Menu</h2>
+      <p class="text-stone-600 text-sm sm:text-base">
+        Tocca una portata per aprire il menu a tendina, oppure cerca rapidamente un piatto o un ingrediente.
+      </p>
+    </div>
+
+    <!-- Search & Dietary Filter Bar -->
+    <div class="bg-white border border-stone-200/90 rounded-2xl p-4 sm:p-5 shadow-sm mb-6">
+      <div class="flex flex-col md:flex-row gap-3.5 items-stretch md:items-center justify-between">
+        <!-- Search Input -->
+        <div class="relative flex-1">
+          <svg class="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+          </svg>
+          <input
+            id="menuSearch"
+            type="text"
+            placeholder="Cerca piatto o ingrediente (es. bufala, cozze, fritto, tartufo, tiramisù...)"
+            oninput="renderMenu()"
+            class="w-full pl-10 pr-9 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-sm text-stone-800 placeholder:text-stone-400 focus:outline-none focus:border-brand-gold focus:bg-white transition"
+          />
+          <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-700 text-xs font-bold">
+            &#10005;
+          </button>
+        </div>
+
+        <!-- Dietary Pills -->
+        <div class="flex flex-wrap items-center gap-2" id="dietFilters">
+          <button onclick="toggleTag('pesce')" data-tag="pesce" class="tag-btn px-3 py-2 rounded-xl text-xs font-semibold border border-stone-200 bg-stone-50 text-stone-700 hover:border-brand-gold transition">
+            Pesce
+          </button>
+          <button onclick="toggleTag('veg')" data-tag="veg" class="tag-btn px-3 py-2 rounded-xl text-xs font-semibold border border-stone-200 bg-stone-50 text-stone-700 hover:border-brand-gold transition">
+            Vegetariano
+          </button>
+          <button onclick="toggleTag('piccante')" data-tag="piccante" class="tag-btn px-3 py-2 rounded-xl text-xs font-semibold border border-stone-200 bg-stone-50 text-stone-700 hover:border-brand-gold transition">
+            Piccante
+          </button>
+          <button onclick="toggleTag('gf')" data-tag="gf" class="tag-btn px-3 py-2 rounded-xl text-xs font-semibold border border-stone-200 bg-stone-50 text-stone-700 hover:border-brand-gold transition">
+            Senza Glutine
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Quick Pills -->
+    <div class="flex overflow-x-auto no-scrollbar sm:flex-wrap sm:justify-center gap-2 pb-2 mb-6" id="menuTabs">
+      <button onclick="setCategory('tutti')" data-cat="tutti" class="menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-dark text-white transition shadow-sm">
+        Tutte le Portate (Tendina)
+      </button>
+      <button onclick="setCategory('antipasti')" data-cat="antipasti" class="menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-stone-700 border border-stone-200 hover:border-brand-gold transition">
+        Antipasti
+      </button>
+      <button onclick="setCategory('primi')" data-cat="primi" class="menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-stone-700 border border-stone-200 hover:border-brand-gold transition">
+        Primi
+      </button>
+      <button onclick="setCategory('secondi')" data-cat="secondi" class="menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-stone-700 border border-stone-200 hover:border-brand-gold transition">
+        Secondi
+      </button>
+      <button onclick="setCategory('contorni')" data-cat="contorni" class="menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-stone-700 border border-stone-200 hover:border-brand-gold transition">
+        Contorni
+      </button>
+      <button onclick="setCategory('pizze_classiche')" data-cat="pizze_classiche" class="menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-stone-700 border border-stone-200 hover:border-brand-gold transition">
+        Pizze Classiche
+      </button>
+      <button onclick="setCategory('pizze_speciali')" data-cat="pizze_speciali" class="menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-stone-700 border border-stone-200 hover:border-brand-gold transition">
+        Pizze Speciali
+      </button>
+      <button onclick="setCategory('dolci')" data-cat="dolci" class="menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-stone-700 border border-stone-200 hover:border-brand-gold transition">
+        Dolci &amp; Bevande
+      </button>
+    </div>
+
+    <!-- Accordion Controls Bar (visible in 'tutti' mode) -->
+    <div id="accordionControls" class="flex items-center justify-between text-xs text-stone-500 mb-4 px-1">
+      <span id="itemsCount" class="font-semibold uppercase tracking-wider"></span>
+      <div class="flex items-center gap-3">
+        <button onclick="toggleAllSections(true)" class="hover:text-brand-dark font-semibold underline decoration-brand-gold">Apri tutte</button>
+        <span>&bull;</span>
+        <button onclick="toggleAllSections(false)" class="hover:text-brand-dark font-semibold underline decoration-stone-300">Chiudi tutte</button>
+      </div>
+    </div>
+
+    <!-- Menu Container -->
+    <div id="menuContainer" class="space-y-3.5"></div>
+
+    <!-- Empty State -->
+    <div id="menuEmptyState" class="hidden text-center py-12 bg-white rounded-2xl border border-stone-200">
+      <p class="font-serif text-2xl font-bold text-brand-dark mb-1">Nessun piatto trovato</p>
+      <p class="text-sm text-stone-500 mb-4">Prova a rimuovere un filtro o a cercare un altro ingrediente.</p>
+      <button onclick="resetAllFilters()" class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-xs font-semibold hover:bg-stone-800 transition">
+        Mostra tutto il menu
+      </button>
+    </div>
+
+    <!-- Menu Notes & Impasti Box -->
+    <div class="mt-10 bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-bordeaux block mb-1">Impasti &amp; Lievitazione</span>
+          <p class="text-stone-600 leading-relaxed">
+            Impasto classico ad alta idratazione e lunga maturazione. Disponibile su richiesta <strong>impasto integrale (+1,50 &euro;)</strong> o <strong>base senza glutine (+2,50 &euro;)</strong>.
+          </p>
+        </div>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-bordeaux block mb-1">Coperto &amp; Servizio</span>
+          <p class="text-stone-600 leading-relaxed">
+            Coperto &euro; 2,00 a persona (include pane fresco e grissini). Menu mezzogiorno a prezzo fisso dal lunedì al venerdì (esclusi festivi).
+          </p>
+        </div>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-bordeaux block mb-1">Asporto &amp; Allergeni</span>
+          <p class="text-stone-600 leading-relaxed">
+            Tutte le pizze e i piatti sono disponibili anche da asporto chiamando lo <a href="tel:+39038120915" class="font-semibold text-brand-dark underline decoration-brand-gold">0381 20915</a>. Informare il personale per allergie o intolleranze.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Strengths Section -->
+  <section id="locale" class="bg-brand-dark text-white py-20 sm:py-24 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.22em] text-brand-gold">L'Esperienza</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-6 leading-tight">
+            Un locale rinnovato, accogliente e curato nei dettagli.
+          </h2>
+          <p class="text-stone-300 leading-relaxed mb-8">
+            Che si tratti di una cena in famiglia, di una serata tra amici o di una pausa pranzo di lavoro, il <strong>Segreto del Sorriso</strong> unisce la rapidità e la fragranza della pizzeria alla qualità della cucina espressa.
+          </p>
+
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-gold/15 border border-brand-gold/30 flex items-center justify-center text-brand-gold shrink-0 mt-0.5 font-serif font-bold text-lg">
+                01
+              </div>
+              <div>
+                <h3 class="font-bold text-white text-base">Pizza Sottile e Digeribile</h3>
+                <p class="text-sm text-stone-400 mt-1">Lunga lievitazione, cottura uniforme e ingredienti selezionati per una pizza leggera e croccante fino all'ultimo spicchio.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-gold/15 border border-brand-gold/30 flex items-center justify-center text-brand-gold shrink-0 mt-0.5 font-serif font-bold text-lg">
+                02
+              </div>
+              <div>
+                <h3 class="font-bold text-white text-base">Cucina di Pesce e Tradizione</h3>
+                <p class="text-sm text-stone-400 mt-1">Dagli antipasti di mare ai risotti cremosi fino alle fritture dorate e ai secondi di carne, preparati al momento.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-gold/15 border border-brand-gold/30 flex items-center justify-center text-brand-gold shrink-0 mt-0.5 font-serif font-bold text-lg">
+                03
+              </div>
+              <div>
+                <h3 class="font-bold text-white text-base">Sala Ampia e Luminosa</h3>
+                <p class="text-sm text-stone-400 mt-1">Ambienti ristrutturati, distanziati e tranquilli, ideali anche per gruppi, ricorrenze e cene aziendali a Vigevano.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80" alt="Pizza artigianale appena sfornata" class="rounded-2xl object-cover h-64 sm:h-72 w-full shadow-2xl" />
+          <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=80" alt="Spaghetti ai frutti di mare impiattati" class="rounded-2xl object-cover h-64 sm:h-72 w-full mt-6 shadow-2xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="recensioni" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs font-bold uppercase tracking-[0.22em] text-brand-bordeaux">Dicono di Noi</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2">Apprezzato da oltre 1.200 clienti</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-7 rounded-2xl border border-stone-200/80 shadow-sm">
+        <div class="text-brand-gold text-sm mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4">
+          "Locale ristrutturato molto bello, luminoso e pulito. Pizza sottile e ben condita, davvero ottima. Servizio veloce e personale sempre gentile."
+        </p>
+        <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">Cliente Google</span>
+      </div>
+
+      <div class="bg-white p-7 rounded-2xl border border-stone-200/80 shadow-sm">
+        <div class="text-brand-gold text-sm mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4">
+          "Ottimo sia per la pizza che per il ristorante: abbiamo preso antipasti e primi di pesce ed era tutto freschissimo e abbondante. Prezzi onesti."
+        </p>
+        <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">Cliente Google</span>
+      </div>
+
+      <div class="bg-white p-7 rounded-2xl border border-stone-200/80 shadow-sm">
+        <div class="text-brand-gold text-sm mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4">
+          "Ambiente tranquillo e accogliente, perfetto per una cena in compagnia senza confusione. Torneremo sicuramente!"
+        </p>
+        <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">Cliente Google</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours & Location Section -->
+  <section id="orari" class="py-16 sm:py-20 px-4 sm:px-6 bg-stone-200/60 border-t border-stone-300/60">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+      <!-- Info Card -->
+      <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-stone-200 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.22em] text-brand-bordeaux">Contatti &amp; Orari</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2 mb-6">Vieni a trovarci</h2>
+
+          <div class="space-y-4 text-sm text-stone-700 mb-8">
+            <div class="flex items-start gap-3">
+              <span class="font-bold text-brand-dark min-w-[90px]">Indirizzo:</span>
+              <span>Viale dei Mille, 86 — 27029 Vigevano (PV)</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-bold text-brand-dark min-w-[90px]">Telefono:</span>
+              <a href="tel:+39038120915" class="text-brand-bordeaux font-bold hover:underline">0381 20915</a>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-bold text-brand-dark min-w-[90px]">Pranzo:</span>
+              <span>12:00 – 14:30</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-bold text-brand-dark min-w-[90px]">Cena:</span>
+              <span>19:00 – 23:30</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-bold text-brand-dark min-w-[90px]">Chiusura:</span>
+              <span class="text-brand-bordeaux font-medium">Martedì (riposo settimanale)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="tel:+39038120915" class="flex-1 text-center bg-brand-dark hover:bg-stone-800 text-white font-semibold py-3.5 px-5 rounded-xl transition">
+            Chiama per Prenotare
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+pizzeria+Segreto+Del+Sorriso+Viale+dei+Mille+86+Vigevano" target="_blank" rel="noopener" class="flex-1 text-center bg-brand-gold hover:bg-brand-goldHover text-brand-dark font-semibold py-3.5 px-5 rounded-xl transition">
+            Apri su Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- Map Embed -->
+      <div class="rounded-3xl overflow-hidden shadow-sm border border-stone-200 min-h-[340px] bg-stone-300">
+        <iframe
+          title="Mappa Ristorante Pizzeria Segreto del Sorriso Vigevano"
+          src="https://www.google.com/maps?q=Viale+dei+Mille+86,+27029+Vigevano+PV&output=embed"
+          class="w-full h-full min-h-[340px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-stone-400 py-10 px-4 sm:px-6 text-center text-xs border-t border-white/10">
+    <p class="font-serif text-lg text-white font-semibold mb-1">Ristorante Pizzeria Segreto del Sorriso</p>
+    <p>Viale dei Mille, 86 — 27029 Vigevano (PV) &bull; Tel. 0381 20915</p>
+    <p class="mt-4 text-stone-500">Bozza dimostrativa Menu Digitale &amp; Sito Vetrina</p>
+  </footer>
+
+  <script>
+    const categoryMeta = {
+      antipasti: {
+        title: "Antipasti di Mare & Terra",
+        subtitle: "Proposte fredde e calde per iniziare il pasto",
+        range: "6,50 € – 15,00 €"
+      },
+      primi: {
+        title: "Primi Piatti",
+        subtitle: "Paste fresche, trafilate al bronzo e risotti mantecati",
+        range: "8,50 € – 14,50 €"
+      },
+      secondi: {
+        title: "Secondi di Mare & Terra",
+        subtitle: "Grigliate, fritture dorate e tagli selezionati",
+        range: "11,00 € – 18,50 €"
+      },
+      contorni: {
+        title: "Contorni & Insalatone",
+        subtitle: "Verdure di stagione, patate e piatti unici leggeri",
+        range: "4,50 € – 9,50 €"
+      },
+      pizze_classiche: {
+        title: "Pizze Classiche",
+        subtitle: "Impasto sottile e fragrante ad alta digeribilità",
+        range: "5,50 € – 9,50 €"
+      },
+      pizze_speciali: {
+        title: "Pizze Speciali & Bianche",
+        subtitle: "Abbinamenti gourmet, pizze bianche e proposte della casa",
+        range: "9,50 € – 12,50 €"
+      },
+      dolci: {
+        title: "Dolci & Bevande",
+        subtitle: "Dessert artigianali, bibite, birre e vini",
+        range: "1,50 € – 7,00 €"
+      }
+    };
+
+    const sectionOrder = [
+      "antipasti",
+      "primi",
+      "secondi",
+      "contorni",
+      "pizze_classiche",
+      "pizze_speciali",
+      "dolci"
+    ];
+
+    const menuItems = [
+      // --- ANTIPASTI ---
+      { cat: "antipasti", name: "Impepata di Cozze Fresche", price: "10,00 €", desc: "Cozze selezionate saltate con aglio, prezzemolo fresco, pepe nero e crostini di pane tostato.", badge: "Consigliato", tags: ["pesce"] },
+      { cat: "antipasti", name: "Soutè di Cozze e Vongole", price: "12,50 €", desc: "Cozze e vongole veraci sfumate al vino bianco con pomodorini datterini e olio EVO.", badge: "Mare", tags: ["pesce"] },
+      { cat: "antipasti", name: "Antipasto Misto del Segreto (Mare)", price: "15,00 €", desc: "Insalata di mare tiepida, polpo con patate, gamberetti in salsa rosa e alici marinate.", badge: "Specialità", tags: ["pesce", "gf"] },
+      { cat: "antipasti", name: "Polpo Arrostito su Crema di Ceci", price: "13,50 €", desc: "Tentacolo di polpo scottato alla piastra su vellutata tiepida di ceci e rosmarino.", badge: "", tags: ["pesce", "gf"] },
+      { cat: "antipasti", name: "Insalata di Mare Tiepida", price: "12,00 €", desc: "Calamari, seppie, polpo e gamberi conditi con emulsione al limone, sedano e prezzemolo.", badge: "", tags: ["pesce", "gf"] },
+      { cat: "antipasti", name: "Cocktail di Gamberi", price: "10,50 €", desc: "Gamberi sgusciati su letto di lattuga croccante con salsa cocktail delicata.", badge: "", tags: ["pesce", "gf"] },
+      { cat: "antipasti", name: "Tagliere Tradizione Lomellina", price: "13,00 €", desc: "Prosciutto crudo di Parma 24 mesi, salame d'oca, coppa piacentina, formaggi e gnocco fritto.", badge: "", tags: [] },
+      { cat: "antipasti", name: "Prosciutto Crudo e Bufala Campana", price: "11,50 €", desc: "Crudo dolce tagliato al momento accompagnato da mozzarella di bufala DOP e rucola.", badge: "", tags: ["gf"] },
+      { cat: "antipasti", name: "Caprese con Bufala e Pomodori Cuore di Bue", price: "9,50 €", desc: "Mozzarella di bufala campana DOP, pomodori freschi, basilico e origano di montagna.", badge: "", tags: ["veg", "gf"] },
+      { cat: "antipasti", name: "Bruschette Miste dello Chef (4 pz)", price: "6,50 €", desc: "Pomodoro fresco e basilico, paté di olive taggiasche, crema ai funghi porcini.", badge: "", tags: ["veg"] },
+
+      // --- PRIMI PIATTI ---
+      { cat: "primi", name: "Spaghetti allo Scoglio", price: "14,00 €", desc: "Spaghetti trafilati al bronzo con cozze, vongole, calamari, scampi, gamberi e pomodorino fresco.", badge: "Più ordinato", tags: ["pesce"] },
+      { cat: "primi", name: "Spaghetti alle Vongole Veraci", price: "13,00 €", desc: "Vongole veraci, aglio dolce, olio extravergine d'oliva, prezzemolo fresco e una punta di peperoncino.", badge: "", tags: ["pesce"] },
+      { cat: "primi", name: "Risotto alla Pescatora", price: "14,50 €", desc: "Riso Carnaroli mantecato con frutti di mare, crostacei e fumetto di pesce (min. 2 porzioni).", badge: "Specialità", tags: ["pesce", "gf"] },
+      { cat: "primi", name: "Paccheri Gamberi, Zucchine e Zafferano", price: "13,50 €", desc: "Paccheri di Gragnano saltati con code di gambero, zucchine novelle e pistilli di zafferano.", badge: "", tags: ["pesce"] },
+      { cat: "primi", name: "Tagliolini al Salmone Fresco e Lime", price: "12,50 €", desc: "Tagliolini all'uovo con tranci di salmone fresco, scorza di lime ed erba cipollina.", badge: "", tags: ["pesce"] },
+      { cat: "primi", name: "Gnocchetti Gamberetti e Rucola", price: "12,00 €", desc: "Gnocchetti di patate mantecati con gamberetti rosa, pomodorini datterini e rucola fresca.", badge: "", tags: ["pesce"] },
+      { cat: "primi", name: "Risotto Funghi Porcini e Taleggio", price: "12,50 €", desc: "Riso Carnaroli con funghi porcini trifolati, mantecato con taleggio DOP e Parmigiano.", badge: "", tags: ["veg", "gf"] },
+      { cat: "primi", name: "Tagliatelle al Ragù della Tradizione", price: "10,50 €", desc: "Tagliatelle fresche all'uovo con ragù classico di manzo a lenta cottura.", badge: "", tags: [] },
+      { cat: "primi", name: "Penne all'Arrabbiata", price: "8,50 €", desc: "Salsa di pomodoro San Marzano, aglio, prezzemolo e peperoncino rosso.", badge: "", tags: ["veg", "piccante"] },
+      { cat: "primi", name: "Lasagne al Forno della Casa", price: "10,50 €", desc: "Sfoglia all'uovo, ragù tradizionale, besciamella vellutata e Parmigiano Reggiano gratinato.", badge: "", tags: [] },
+
+      // --- SECONDI ---
+      { cat: "secondi", name: "Fritto Misto di Mare", price: "15,50 €", desc: "Anelli di calamari, gamberi, ciuffetti e verdurine croccanti dorati al momento con salsa tartara.", badge: "Consigliato", tags: ["pesce"] },
+      { cat: "secondi", name: "Grigliata Mista di Pesce", price: "18,50 €", desc: "Gamberoni, scampi, trancio di salmone, calamaro e pesce spada alla griglia con olio alle erbe.", badge: "Mare", tags: ["pesce", "gf"] },
+      { cat: "secondi", name: "Calamari alla Griglia", price: "14,50 €", desc: "Calamari interi scottati alla piastra con emulsione di olio EVO, limone e prezzemolo.", badge: "", tags: ["pesce", "gf"] },
+      { cat: "secondi", name: "Filetto di Orata in Crosta di Patate", price: "15,50 €", desc: "Filetto di orata fresca al forno con sfoglie sottili di patate, timo e olive taggiasche.", badge: "", tags: ["pesce", "gf"] },
+      { cat: "secondi", name: "Gamberoni al Brandy", price: "16,00 €", desc: "Gamberoni interi flambati al brandy con salsa vellutata e crostini caldi.", badge: "", tags: ["pesce"] },
+      { cat: "secondi", name: "Tagliata di Manzo Rucola e Grana", price: "16,50 €", desc: "Controfiletto di manzo alla griglia servito su letto di rucola selvatica, scaglie di Grana e aceto balsamico.", badge: "", tags: ["gf"] },
+      { cat: "secondi", name: "Tagliata di Manzo ai Funghi Porcini", price: "17,50 €", desc: "Controfiletto di manzo alla piastra con funghi porcini trifolati e rosmarino.", badge: "", tags: ["gf"] },
+      { cat: "secondi", name: "Cotoletta alla Milanese con Patatine", price: "13,50 €", desc: "Lombata di vitello impanata e dorata, accompagnata da patate stick fritte.", badge: "", tags: [] },
+      { cat: "secondi", name: "Petto di Pollo alla Griglia", price: "11,00 €", desc: "Filetto di pollo alla piastra con erbe aromatiche e contorno a scelta.", badge: "", tags: ["gf"] },
+      { cat: "secondi", name: "Scaloppine al Limone o ai Funghi", price: "12,50 €", desc: "Fettine tenere di vitello infarinate e sfumate a scelta al limone fresco o ai funghi.", badge: "", tags: [] },
+
+      // --- CONTORNI ---
+      { cat: "contorni", name: "Patatine Fritte Stick", price: "4,50 €", desc: "Porzione abbondante di patate dorate e croccanti.", badge: "", tags: ["veg", "gf"] },
+      { cat: "contorni", name: "Patate al Forno al Rosmarino", price: "5,00 €", desc: "Patate a spicchi arrostite con rosmarino fresco e olio extravergine.", badge: "", tags: ["veg", "gf"] },
+      { cat: "contorni", name: "Verdure Grigliate Miste", price: "5,50 €", desc: "Zucchine, melanzane, peperoni e radicchio alla piastra con olio EVO.", badge: "", tags: ["veg", "gf"] },
+      { cat: "contorni", name: "Insalata Mista di Stagione", price: "4,50 €", desc: "Lattuga, pomodori, carote, finocchi e olive.", badge: "", tags: ["veg", "gf"] },
+      { cat: "contorni", name: "Spinaci Saltati al Burro o Olio e Aglio", price: "5,00 €", desc: "Spinaci in foglia ripassati in padella con Parmigiano o aglio e olio.", badge: "", tags: ["veg", "gf"] },
+      { cat: "contorni", name: "Insalatona Mediterranea (Piatto Unico)", price: "9,50 €", desc: "Insalata verde, tonno, mozzarella, pomodorini, olive taggiasche, mais e uova sode.", badge: "", tags: ["pesce", "gf"] },
+
+      // --- PIZZE CLASSICHE ---
+      { cat: "pizze_classiche", name: "Marinara", price: "5,50 €", desc: "Pomodoro San Marzano, aglio, origano di montagna e olio extravergine d'oliva.", badge: "", tags: ["veg"] },
+      { cat: "pizze_classiche", name: "Margherita", price: "6,50 €", desc: "Pomodoro San Marzano, fior di latte, basilico fresco e olio extravergine d'oliva.", badge: "", tags: ["veg"] },
+      { cat: "pizze_classiche", name: "Napoli", price: "7,50 €", desc: "Pomodoro, fior di latte, filetti di acciughe del Cantabrico e origano.", badge: "", tags: ["pesce"] },
+      { cat: "pizze_classiche", name: "Romana", price: "8,00 €", desc: "Pomodoro, fior di latte, acciughe, capperi, olive nere e origano.", badge: "", tags: ["pesce"] },
+      { cat: "pizze_classiche", name: "Prosciutto Cotto", price: "7,50 €", desc: "Pomodoro, fior di latte e prosciutto cotto alta qualità.", badge: "", tags: [] },
+      { cat: "pizze_classiche", name: "Prosciutto e Funghi", price: "8,50 €", desc: "Pomodoro, fior di latte, prosciutto cotto e funghi champignon freschi.", badge: "", tags: [] },
+      { cat: "pizze_classiche", name: "Diavola", price: "8,50 €", desc: "Pomodoro, fior di latte e salame piccante calabrese.", badge: "Classica", tags: ["piccante"] },
+      { cat: "pizze_classiche", name: "Capricciosa", price: "9,50 €", desc: "Pomodoro, fior di latte, prosciutto cotto, funghi, carciofini, olive taggiasche e acciughe.", badge: "", tags: [] },
+      { cat: "pizze_classiche", name: "Quattro Stagioni", price: "9,50 €", desc: "Pomodoro, fior di latte, prosciutto cotto, funghi, carciofini e olive nere a spicchi.", badge: "", tags: [] },
+      { cat: "pizze_classiche", name: "Quattro Formaggi", price: "9,00 €", desc: "Fior di latte, gorgonzola dolce DOP, fontina valdostana e scaglie di Grana Padano.", badge: "", tags: ["veg"] },
+      { cat: "pizze_classiche", name: "Tonno e Cipolla", price: "8,50 €", desc: "Pomodoro, fior di latte, filetti di tonno in olio d'oliva e cipolla rossa di Tropea.", badge: "", tags: ["pesce"] },
+      { cat: "pizze_classiche", name: "Wurstel e Patatine", price: "8,50 €", desc: "Pomodoro, fior di latte, wurstel e patatine fritte dorate.", badge: "", tags: [] },
+      { cat: "pizze_classiche", name: "Vegetariana", price: "9,00 €", desc: "Pomodoro, fior di latte, zucchine, melanzane e peperoni grigliati.", badge: "", tags: ["veg"] },
+      { cat: "pizze_classiche", name: "Calzone Classico", price: "8,50 €", desc: "Pizza ripiena con pomodoro, fior di latte, prosciutto cotto e ricotta fresca.", badge: "", tags: [] },
+      { cat: "pizze_classiche", name: "Calzone Farcito", price: "9,50 €", desc: "Ripieno con pomodoro, fior di latte, prosciutto cotto, funghi champignon e carciofini.", badge: "", tags: [] },
+
+      // --- PIZZE SPECIALI & BIANCHE ---
+      { cat: "pizze_speciali", name: "Segreto del Sorriso", price: "11,50 €", desc: "Pomodoro, mozzarella di bufala DOP, crudo di Parma 24 mesi, rucola, pomodorini e scaglie di Grana.", badge: "La Casa", tags: [] },
+      { cat: "pizze_speciali", name: "Bufalina Verace", price: "9,50 €", desc: "Pomodoro San Marzano, mozzarella di bufala campana DOP a crudo, pomodorini e basilico.", badge: "Consigliata", tags: ["veg"] },
+      { cat: "pizze_speciali", name: "Frutti di Mare", price: "12,50 €", desc: "Pomodoro, aglio, origano, cozze, vongole, calamari, gamberetti e prezzemolo fresco.", badge: "Mare", tags: ["pesce"] },
+      { cat: "pizze_speciali", name: "Valtellina", price: "10,50 €", desc: "Pomodoro, fior di latte, bresaola della Valtellina IGP, rucola selvatica e scaglie di Grana.", badge: "", tags: [] },
+      { cat: "pizze_speciali", name: "Speck, Brie e Noci", price: "10,50 €", desc: "Base bianca con fior di latte, formaggio Brie fuso, speck dell'Alto Adige IGP e gherigli di noce.", badge: "Bianca", tags: [] },
+      { cat: "pizze_speciali", name: "Porcini e Salsiccia", price: "10,50 €", desc: "Pomodoro, fior di latte, funghi porcini trifolati e salsiccia fresca nostrana.", badge: "", tags: [] },
+      { cat: "pizze_speciali", name: "Tartufata", price: "11,50 €", desc: "Base bianca con fior di latte, crema al tartufo nero, funghi porcini e scaglie di Grana.", badge: "Bianca", tags: ["veg"] },
+      { cat: "pizze_speciali", name: "Burrata e Mortadella", price: "11,50 €", desc: "Base bianca con fior di latte, mortadella Bologna IGP, burrata pugliese intera e granella di pistacchio.", badge: "Gourmet", tags: [] },
+      { cat: "pizze_speciali", name: "Salmone e Zucchine", price: "11,00 €", desc: "Base bianca con fior di latte, zucchine grigliate, salmone affumicato e pepe rosa.", badge: "Bianca", tags: ["pesce"] },
+      { cat: "pizze_speciali", name: "Calabrese Forte", price: "10,00 €", desc: "Pomodoro, fior di latte, 'nduja di Spilinga, salame piccante, cipolla rossa e olive nere.", badge: "Piccante", tags: ["piccante"] },
+      { cat: "pizze_speciali", name: "Friarielli e Salsiccia", price: "10,50 €", desc: "Base bianca con provola affumicata, friarielli napoletani saltati e salsiccia fresca.", badge: "Bianca", tags: [] },
+      { cat: "pizze_speciali", name: "Parmigiana", price: "9,50 €", desc: "Pomodoro, fior di latte, melanzane al forno, basilico fresco e Parmigiano Reggiano.", badge: "", tags: ["veg"] },
+
+      // --- DOLCI & BEVANDE ---
+      { cat: "dolci", name: "Tiramisù Artigianale della Casa", price: "5,50 €", desc: "Savoiardi inzuppati al caffè espresso, crema al mascarpone fresco e cacao amaro.", badge: "Fatto in casa", tags: ["veg"] },
+      { cat: "dolci", name: "Panna Cotta (Frutti di Bosco / Caramello / Cioccolato)", price: "5,00 €", desc: "Panna cotta alla vaniglia Bourbon servita con salsa a scelta.", badge: "", tags: ["veg", "gf"] },
+      { cat: "dolci", name: "Cheesecake ai Frutti di Bosco", price: "5,50 €", desc: "Base croccante ai biscotti, crema fresca al formaggio e coulis di frutti rossi.", badge: "", tags: ["veg"] },
+      { cat: "dolci", name: "Tortino al Cioccolato dal Cuore Caldo", price: "6,00 €", desc: "Tortino fondente servito caldo con ciuffo di panna montata o pallina di gelato alla crema.", badge: "", tags: ["veg"] },
+      { cat: "dolci", name: "Profiteroles al Cioccolato Fondente", price: "5,50 €", desc: "Bignè ripieni di crema chantilly ricoperti da ganache al cioccolato fondente.", badge: "", tags: ["veg"] },
+      { cat: "dolci", name: "Sorbetto al Limone o alla Mela Verde", price: "4,00 €", desc: "Ideale a fine pasto, cremoso e rinfrescante.", badge: "", tags: ["veg", "gf"] },
+      { cat: "dolci", name: "Acqua Naturale / Frizzante (0,75 L)", price: "2,50 €", desc: "Bottiglia in vetro per il tavolo.", badge: "", tags: ["veg", "gf"] },
+      { cat: "dolci", name: "Bibite in Lattina / Vetro (33 cl)", price: "3,50 €", desc: "Coca-Cola, Coca-Cola Zero, Fanta, Sprite, Thè Pesca/Limone.", badge: "", tags: ["veg", "gf"] },
+      { cat: "dolci", name: "Birra alla Spina (Piccola 0,2 L / Media 0,4 L)", price: "3,50 € / 5,50 €", desc: "Bionda Pils fresca alla spina; disponibili anche birre artigianali e senza glutine in bottiglia.", badge: "", tags: ["veg"] },
+      { cat: "dolci", name: "Calice di Vino / Vino della Casa (0,25 L / 0,5 L)", price: "4,50 € / 7,00 €", desc: "Bonarda dell'Oltrepò Pavese, Barbera, Pinot Grigio, Prosecco DOC o selezionati in carta.", badge: "", tags: ["veg", "gf"] },
+      { cat: "dolci", name: "Caffè Espresso / Amari e Grappe", price: "1,50 € / 3,50 €", desc: "Miscela espresso bar e selezione di amari nazionali, limoncello e grappe barricate.", badge: "", tags: ["veg", "gf"] }
+    ];
+
+    let activeCategory = "tutti";
+    let activeTags = [];
+    // Di default apre la prima sezione (Antipasti) per far capire subito come funziona la tendina senza allungare la pagina
+    let openSections = new Set(["antipasti"]);
+
+    function setCategory(cat) {
+      activeCategory = cat;
+      document.querySelectorAll('.menu-tab').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = "menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-dark text-white transition shadow-sm";
+        } else {
+          btn.className = "menu-tab shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-stone-700 border border-stone-200 hover:border-brand-gold transition";
+        }
+      });
+      renderMenu();
+    }
+
+    function toggleSection(secKey) {
+      if (openSections.has(secKey)) {
+        openSections.delete(secKey);
+      } else {
+        openSections.add(secKey);
+      }
+      renderMenu();
+    }
+
+    function toggleAllSections(expand) {
+      if (expand) {
+        sectionOrder.forEach(k => openSections.add(k));
+      } else {
+        openSections.clear();
+      }
+      renderMenu();
+    }
+
+    function toggleTag(tag) {
+      if (activeTags.includes(tag)) {
+        activeTags = activeTags.filter(t => t !== tag);
+      } else {
+        activeTags.push(tag);
+      }
+
+      document.querySelectorAll('.tag-btn').forEach(btn => {
+        const isSelected = activeTags.includes(btn.dataset.tag);
+        if (isSelected) {
+          btn.className = "tag-btn px-3 py-2 rounded-xl text-xs font-semibold border border-brand-dark bg-brand-dark text-white transition";
+        } else {
+          btn.className = "tag-btn px-3 py-2 rounded-xl text-xs font-semibold border border-stone-200 bg-stone-50 text-stone-700 hover:border-brand-gold transition";
+        }
+      });
+      renderMenu();
+    }
+
+    function clearSearch() {
+      document.getElementById('menuSearch').value = '';
+      renderMenu();
+    }
+
+    function resetAllFilters() {
+      activeCategory = 'tutti';
+      activeTags = [];
+      openSections = new Set(["antipasti"]);
+      document.getElementById('menuSearch').value = '';
+      setCategory('tutti');
+      document.querySelectorAll('.tag-btn').forEach(btn => {
+        btn.className = "tag-btn px-3 py-2 rounded-xl text-xs font-semibold border border-stone-200 bg-stone-50 text-stone-700 hover:border-brand-gold transition";
+      });
+      renderMenu();
+    }
+
+    function formatTagPill(tag) {
+      const labels = {
+        pesce: { text: "Pesce", cls: "bg-sky-50 text-sky-700 border-sky-200" },
+        veg: { text: "Veg", cls: "bg-emerald-50 text-emerald-700 border-emerald-200" },
+        piccante: { text: "Piccante", cls: "bg-rose-50 text-rose-700 border-rose-200" },
+        gf: { text: "Senza Glutine", cls: "bg-amber-50 text-amber-800 border-amber-200" }
+      };
+      const item = labels[tag];
+      if (!item) return "";
+      return `<span class="text-[10px] font-semibold px-2 py-0.5 rounded-md border ${item.cls}">${item.text}</span>`;
+    }
+
+    function createItemRow(item) {
+      const tagsHtml = (item.tags || []).map(formatTagPill).join("");
+      return `
+        <div class="py-4 first:pt-2 last:pb-2 border-b last:border-b-0 border-stone-100 flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-6">
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <h4 class="font-serif text-lg sm:text-xl font-bold text-brand-dark leading-snug">${item.name}</h4>
+              ${item.badge ? `<span class="text-[10px] font-bold uppercase tracking-wider bg-brand-gold/25 text-brand-dark px-2 py-0.5 rounded-full">${item.badge}</span>` : ''}
+              ${tagsHtml}
+            </div>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed mt-1">${item.desc}</p>
+          </div>
+          <div class="font-bold text-brand-bordeaux text-base sm:text-lg whitespace-nowrap sm:text-right">
+            ${item.price}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderMenu() {
+      const query = document.getElementById('menuSearch').value.trim().toLowerCase();
+      const clearBtn = document.getElementById('clearSearchBtn');
+      clearBtn.classList.toggle('hidden', query.length === 0);
+
+      const isSearchingOrFiltering = query.length > 0 || activeTags.length > 0;
+
+      const filtered = menuItems.filter(item => {
+        const matchesCategory = activeCategory === 'tutti' || item.cat === activeCategory;
+        const matchesQuery = !query ||
+          item.name.toLowerCase().includes(query) ||
+          item.desc.toLowerCase().includes(query);
+        const matchesTags = activeTags.every(tag => (item.tags || []).includes(tag));
+        return matchesCategory && matchesQuery && matchesTags;
+      });
+
+      document.getElementById('itemsCount').textContent = `${filtered.length} ${filtered.length === 1 ? 'portata disponibile' : 'portate disponibili'}`;
+      document.getElementById('accordionControls').classList.toggle('hidden', activeCategory !== 'tutti' || filtered.length === 0);
+
+      const container = document.getElementById('menuContainer');
+      const emptyState = document.getElementById('menuEmptyState');
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+
+      if (activeCategory === 'tutti') {
+        let html = '';
+        sectionOrder.forEach(secKey => {
+          const secItems = filtered.filter(i => i.cat === secKey);
+          if (secItems.length > 0) {
+            const secMeta = categoryMeta[secKey];
+            const isOpen = isSearchingOrFiltering || openSections.has(secKey);
+
+            html += `
+              <div class="bg-white rounded-2xl border ${isOpen ? 'border-brand-gold/80 shadow-md' : 'border-stone-200/90 shadow-sm'} overflow-hidden transition">
+                <button
+                  type="button"
+                  onclick="toggleSection('${secKey}')"
+                  aria-expanded="${isOpen}"
+                  class="w-full px-5 sm:px-7 py-4 sm:py-5 flex items-center justify-between gap-4 text-left hover:bg-stone-50/80 transition"
+                >
+                  <div>
+                    <div class="flex flex-wrap items-center gap-2.5">
+                      <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">${secMeta.title}</h3>
+                      <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-600">
+                        ${secItems.length} ${secItems.length === 1 ? 'piatto' : 'piatti'}
+                      </span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-stone-500 mt-0.5">${secMeta.subtitle} &bull; <span class="font-medium text-brand-bordeaux">${secMeta.range}</span></p>
+                  </div>
+
+                  <div class="w-9 h-9 rounded-full ${isOpen ? 'bg-brand-dark text-brand-gold rotate-180' : 'bg-stone-100 text-stone-700'} flex items-center justify-center shrink-0 transition-transform duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </div>
+                </button>
+
+                ${isOpen ? `
+                  <div class="px-5 sm:px-7 pb-5 pt-1 border-t border-stone-100 bg-white">
+                    ${secItems.map(createItemRow).join('')}
+                  </div>
+                ` : ''}
+              </div>
+            `;
+          }
+        });
+        container.innerHTML = html;
+      } else {
+        const secMeta = categoryMeta[activeCategory];
+        container.innerHTML = `
+          <div class="bg-white rounded-2xl border border-brand-gold/80 shadow-md overflow-hidden">
+            <div class="px-5 sm:px-7 py-5 border-b border-stone-100 bg-stone-50/60 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">${secMeta.title}</h3>
+                <p class="text-xs sm:text-sm text-stone-500 mt-0.5">${secMeta.subtitle}</p>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-bordeaux">${filtered.length} piatti</span>
+            </div>
+            <div class="px-5 sm:px-7 py-4">
+              ${filtered.map(createItemRow).join('')}
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    // Initial render
+    renderMenu();
+  </script>
+</body>
+</html>
